@@ -1,6 +1,8 @@
-@import './variables';
-@import './mixins';
-@import './base';
+@import './global/variables';
+@import './global/breakpoints';
+@import './global/base';
 
-@import './blog';
-@import './article';
+@import './components/blog';
+@import './components/article';
+
+@import './utilities/spacing';
