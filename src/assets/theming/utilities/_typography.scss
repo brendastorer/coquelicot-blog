@@ -1,0 +1,106 @@
+.type--heading {
+  font-family: var(--font-face-heading);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  letter-spacing: var(--font-heading-letter-spacing);
+  text-transform: var(--font-heading-text-transform);
+}
+
+.type--body {
+  font-family: var(--font-face-copy);
+}
+
+.title--large,
+.shopify-policy__title {
+  font-size: var(--font-heading-size-large);
+  line-height: var(--font-heading-line-height);
+}
+
+.title--medium {
+  font-size: var(--font-heading-size-medium);
+  line-height: var(--font-heading-line-height);
+}
+
+.title--small {
+  font-size: var(--font-heading-size-small);
+  line-height: var(--font-heading-line-height);
+}
+
+.title--xsmall {
+  font-size: var(--font-heading-size-xsmall);
+  line-height: var(--font-heading-line-height);
+}
+
+.copy--large {
+  font-size: var(--font-copy-size-large);
+}
+
+.copy--medium {
+  font-size: 1rem;
+}
+
+.copy--default {
+  font-family: var(--font-face-copy);
+  font-size: 1rem;
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  line-height: var(--font-copy-line-height);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.copy--small {
+  font-size: var(--font-copy-size-small);
+}
+
+.copy--xsmall {
+  font-size: var(--font-copy-size-xsmall);
+}
+
+.copy--eyebrow {
+  font-family: var(--font-face-copy);
+  font-weight: var(--font-copy-bold-weight);
+  letter-spacing: 0.15em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.copy--bold {
+  font-weight: var(--font-copy-bold-weight);
+}
+
+.copy--italic {
+  font-style: oblique;
+}
+
+.line-height--heading {
+  line-height: var(--font-heading-line-height);
+}
+
+.line-height--copy {
+  line-height: var(--font-copy-line-height);
+}
+
+.line-height--short {
+  line-height: 1;
+}
+
+.type--word-break {
+  word-break: break-word;
+}
+
+.type--no-wrap {
+  white-space: nowrap;
+}
+
+.type--strikethrough {
+  text-decoration: line-through;
+}
+
+.link--no-underline {
+  text-decoration-color: transparent;
+}
+
+.link--no-underline:hover {
+  text-decoration-color: hsla(var(--color-link-raw), 0.4);
+}

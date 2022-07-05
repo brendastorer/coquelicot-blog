@@ -8,6 +8,13 @@ $breakpoint-medium : 900px;
 $breakpoint-large : 990px;
 $breakpoint-xlarge : 1200px;
 
+$unset-breakpoints: (
+  "--xsmall-down": "xsmall-down",
+  "--small-down": "small-down",
+  "--medium-down": "medium-down",
+  "--large-down": "large-down"
+);
+
 @mixin breakpoint($point) {
   @if $point == xsmall-down {
     @media screen and (max-width: $breakpoint-xsmall - 1) {

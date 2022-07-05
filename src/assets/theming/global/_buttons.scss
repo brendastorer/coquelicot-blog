@@ -1,0 +1,77 @@
+/* buttons */
+button,
+.button,
+[type="submit"] {
+  --button-background-color: hsla(var(--color-action-raw), 0.9);
+  --button-text-color: var(--color-action-contrast);
+  --button-background-color--hover: var(--color-burgundy);
+  --button-text-color--hover: var(--color-action);
+
+  align-items: center;
+  appearance: none;
+  background-color: var(--button-background-color);
+  border: var(--border-size) solid var(--button-background-color);
+  border-radius: 0;
+  color: var(--button-text-color);
+  cursor: pointer;
+  display: inline-block;
+  fill: currentColor;
+  font-family: var(--font-face-copy);
+  font-size: 1rem;
+  font-weight: normal;
+  justify-content: center;
+  min-height: var(--form-element-height);
+  height: auto;
+  line-height: 1;
+  padding: 0 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 150ms;
+  transition-property: background-color, border-color, fill, color;
+  transition-timing-function: ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: max-content;
+}
+
+button:hover,
+.button:hover,
+[type="submit"]:hover {
+  border-color: var(--button-background-color--hover);
+  background-color: var(--button-background-color--hover);
+  color: var(--button-text-color--hover);
+  text-decoration: none;
+}
+
+button:focus-visible,
+.button:focus-visible,
+[type="submit"]:focus-visible {
+  color: var(--button-text-color);
+  outline: 2px solid var(--button-background-color);
+  outline-offset: 1px;
+}
+
+/* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
+button:focus,
+.button:focus,
+[type="submit"]:focus {
+  color: var(--button-text-color);
+  outline: 2px solid var(--button-background-color);
+  outline-offset: 1px;
+}
+
+/* Negate the fallback side-effect for browsers that support :focus-visible */
+button:focus:not(:focus-visible),
+.button:focus:not(:focus-visible),
+[type="submit"]:focus:not(:focus-visible) {
+  color: var(--button-text-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+button:focus:hover,
+.button:focus:hover,
+[type="submit"]:focus:hover {
+  outline: 0;
+}

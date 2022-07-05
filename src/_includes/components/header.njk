@@ -1,13 +1,15 @@
 {% set navItems = collections.all | eleventyNavigation %}
-<header role="banner">
-  <div class="logo">
-    <span>My blog</span>
-  </div>
-  <nav role="navigation" aria-label="main navigation" >
-    <ul>
-      {%- for item in navItems %}
-        <li class="nav__item{{ ' active' if page.url === item.url }}">
-          <a href="{{ item.url }}">{{ item.key }}</a>
+<header role="banner" class="page-layout__header site-header space--viewport-sides space--pv--large">
+  <a href="/" class="site-header__logo-link">
+    <img src="../assets/images/coquelicot-watermark.svg" alt="Coquelicot" class="site-header__logo">
+  </a>
+  <nav class="site-header__nav" role="navigation" aria-label="main navigation" >
+    <ul class="site-header__nav-list list--unstyled">
+      {%- for item in navItems -%}
+        <li class="site-header__nav-item {{ ' active' if page.url === item.url }}">
+          <a href="{{ item.url }}" class="site-header__nav-link">
+            {{ item.key }}
+            </a>
         </li>
       {%- endfor -%}
     </ul>

@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-not-so-minimal-blog-starter",
+  "name": "coquelicot-io",
   "version": "1.0.0",
-  "description": "A not so minimal starter for building a website + blog using the Eleventy static site generator.",
+  "description": "Coquelicot, Shopify Theme Design and Development Agency",
   "main": "index.md",
   "scripts": {
     "generate:sprite": "svg-icon-generate --folder=src/assets/icons --output=src/assets/sprite.svg",
@@ -14,9 +14,9 @@
     "debug": "DEBUG=* npx eleventy"
   },
   "author": {
-    "name": "Claudia Reynders",
-    "email": "hello-claudia@mangamaui.com",
-    "url": "https://mangamaui.com"
+    "name": "Coquelicot",
+    "email": "brenda@coquelicot.io",
+    "url": "https://coquelicot.io"
   },
   "license": "MIT",
   "dependencies": {

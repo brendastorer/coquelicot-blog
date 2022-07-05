@@ -9,9 +9,8 @@
   --color-foreground: hsl(var(--color-black-raw));
   --color-background: #fff;
   --color-background-raw: 
-  --color-gray: hsla(var(--color-background-raw), 0.5);
 
-  --color-border: var(--color-gray);
+  --color-border: hsla(var(--color-foreground-raw), 0.5);
   --color-action: hsl(var(--color-poppy-raw));
   --color-action-raw: var(--color-poppy-raw);
   --color-action-contrast: var(--color-background);
@@ -34,7 +33,7 @@
   --font-copy-size-large: 1.25rem;
   --font-copy-size-small: 0.9rem;
   --font-copy-size-xsmall: 0.775rem;
-  --font-copy-size-xxsmall: 0.7rem;
+  --font-copy-size-xxsmall: 0.775rem;
   --font-copy-line-height: 1.5;
   --font-copy-bold-weight: 600;
   --form-element-height: 2.2rem;
@@ -60,19 +59,3 @@
   --z-index-overlay: 2;
   --z-index-overlay-interaction: 3;
 }
-
-/* Colors */
-$light-shade: #E9EFC0;
-$dark-shade: #4E944F;
-$darkest-shade: darken($dark-shade, 17%);
-$accent-shade:#FF8C32;
-
-/*========================================*/
-
-$base-clr: $darkest-shade;
-$bg-clr: lighten($light-shade, 7%);
-$link-clr: $darkest-shade;
-$link-hvr-clr: $accent-shade;
-$cat-clr: $darkest-shade;
-
-
