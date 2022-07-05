@@ -1,0 +1,38 @@
+.site-header {
+  display: grid;
+  grid-template-areas: "nav logo .";
+  grid-template-columns: 1fr max-content 1fr;
+
+  @include breakpoint(small-up) {
+    grid-template-areas: "logo nav";
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+.site-header__logo-link {
+  grid-area: logo;
+}
+
+.site-header__logo {
+  width: 10rem;
+}
+
+.site-header__nav {
+  grid-area: nav;
+}
+
+.site-header__nav-list {
+  @include breakpoint(small-up) {
+    display: flex;
+    gap: var(--space-small);
+    justify-content: end;
+  }
+}
+
+.site-header__nav-link {
+  text-decoration-color: transparent;
+}
+
+.site-header__nav-link:hover {
+  text-decoration-color: var(--color-link-underline);
+}

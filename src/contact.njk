@@ -1,0 +1,44 @@
+---
+layout: page
+permalink: "/contact/"
+eleventyNavigation:
+  key: contact
+  order: 2
+---
+
+<div class="contact">
+  <h2 class="contact__heading align--text-center color--poppy-muted">
+    Say hello!
+  </h2>
+  <p class="align--text-center space--mb--large color--poppy-muted">
+    Looking for a custom Shopify store build or design?<br>Drop <a href="https://brendastorer.com" target="_blank" noopener>me</a> a line.
+  </p>
+  <form class="contact__form" name="coquelicot-contact" data-netlify="true" method="POST">
+    <div class="contact__form-grouped">
+      <fieldset>
+        <label class="space--mb--xsmall" for="name">
+          Name
+        </label>
+        <input type="name" id="name" name="name" />
+      </fieldset>
+      <fieldset>
+        <label class="space--mb--xsmall" for="email-address">
+          Email Address
+        </label>
+        <input type="email" id="email-address" name="email" />
+      </fieldset>
+    </div>
+    <div>
+      <label class="space--mb--xsmall" for="message">
+        Message
+      </label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div class="contact__recaptcha-container">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
+    <div class="contact__button-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
