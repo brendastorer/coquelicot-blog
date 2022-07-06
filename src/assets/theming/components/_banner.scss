@@ -1,7 +1,11 @@
 .banner {
-  --banner-height: 100vh;
+  --banner-height: 100%;
   --banner-min-height: 400px;
   position: relative;
+
+  @include breakpoint(small-up) {
+    --banner-height: 100vh;
+  }
 }
 
 .banner__container {
@@ -47,9 +51,7 @@
   flex-direction: column;
   gap: var(--space-small);
   height: 100%;
-  padding-bottom: var(--space-large);
-  padding-left: var(--space-viewport-sides);
-  padding-right: var(--space-viewport-sides);
+  padding: var(--space-small) var(--space-viewport-sides) var(--space-large);
   position: relative;
   max-width: 100%;
   width: 100%;
