@@ -2,25 +2,33 @@
 layout: page
 ---
 
-# Welcome
-This starter will help you build a relatively simple blog with a few key features, while using the Eleventy static site generator.
-
-This eleventy starter already includes:
-- Basic site navigation with eleventy-navigation
-- Blog categories & category based navigation
-- Image optimisation with Eleventy-img
-- SVG icons with svg-icon-sprite
-- SEO (sitemap, metadata, robots.txt)
-- RSS feed
-- Luxon for handling dates & times
-- A few basic Eleventy configurations, filters and shortcodes
-- Nunjucks templates
-- Sass & the necessary scripts to compile Sass
-
-<br>
-
-You can find the <a href="https://github.com/Mangamaui/eleventy-not-so-minimal-blog-starter" target="_blank">source code on GitHub</a>.
-
-<br><br>
-
-If the listed setup is not what you require, you might want to check out one of the many other Eleveny starters, which can be found here: [Eleventy Starter Projects](https://www.11ty.dev/docs/starter/).
+<div class="banner">
+  <div class="banner__container">
+    <div class="banner__media fade-in-image">
+      <img
+        src="../assets/images/landscape-ipads.jpg"
+        loading="eager"
+        alt="3 ipads, each with a screenshot of the homepage from different websites built by Coquelicot"
+        width="3000px"
+        height="2000px"
+        class="banner__image object-position--top-center banner__image--desktop--only"
+      >
+      <img
+        src="../assets/images/landscape-ipads-mobile.jpg"
+        loading="eager"
+        alt="3 ipads, each with a screenshot of the homepage from different websites built by Coquelicot"
+        width="3000px"
+        height="2000px"
+        class="banner__image banner__image--mobile object-position--top-center"
+      >
+    </div>
+    <div class="banner__content flex-align--top-left flex flex--column space--gap--medium">
+      <h2 class="type--heading title--medium">
+        Coquelicot
+      </h2>
+      <p class="copy--large container--copy-max-width">
+        A web design & development studio specializing in premium Shopify themes.
+      </p>
+    </div>
+  </div>
+</div>

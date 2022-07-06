@@ -1,11 +1,7 @@
-.contact__heading {
-  font-size: 1.5rem;
-}
-
 .contact {
-  margin: 0 auto;
+  margin: var(--logo-height) auto 0;
   max-width: 35rem;
-  padding: 0 2rem 2rem;
+  padding: var(--space-xlarge) 2rem 2rem;
 }
 
 .contact input,
