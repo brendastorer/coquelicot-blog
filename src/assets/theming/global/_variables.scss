@@ -7,8 +7,8 @@
   --color-burgundy: hsl(var(--color-burgundy-raw));
   --color-foreground-raw: 8, 100%, 3%;
   --color-foreground: hsl(var(--color-black-raw));
-  --color-background: #fff;
-  --color-background-raw: 
+  --color-background-raw: 0, 0%, 100%;
+  --color-background: hsl(var(--color-background-raw));
 
   --color-border: hsla(var(--color-foreground-raw), 0.5);
   --color-action: hsl(var(--color-poppy-raw));
@@ -25,6 +25,7 @@
 
   --font-face-copy: "Poppins", sans-serif;
   --font-face-heading: "Poppins", sans-serif;
+  --font-heading-base-size: 2.6rem;
   --font-heading-size-large: var(--font-heading-base-size);
   --font-heading-size-medium: calc(var(--font-heading-base-size) * 0.8);
   --font-heading-size-small: calc(var(--font-heading-base-size) * 0.6);
@@ -33,7 +34,7 @@
   --font-copy-size-large: 1.25rem;
   --font-copy-size-small: 0.9rem;
   --font-copy-size-xsmall: 0.775rem;
-  --font-copy-size-xxsmall: 0.775rem;
+  --font-copy-size-xxsmall: 0.7rem;
   --font-copy-line-height: 1.5;
   --font-copy-bold-weight: 600;
   --form-element-height: 2.2rem;
@@ -44,6 +45,7 @@
   --container-width-medium: 40rem;
   --container-width-small: 24rem;
   --page-width: 100rem;
+  --logo-height: 6rem;
 
   --link-underline-offset: 0.25em;
   --border-size: 1px;
@@ -58,4 +60,13 @@
   --z-index-base: 1;
   --z-index-overlay: 2;
   --z-index-overlay-interaction: 3;
+  --z-index-site-header: 10;
+
+  @include breakpoint(xsmall-up) {
+    --logo-height: 8rem;
+  }
+
+  @include breakpoint(small-up) {
+    --logo-height: 11rem;
+  }
 }

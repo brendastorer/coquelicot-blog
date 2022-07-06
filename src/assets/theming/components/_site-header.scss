@@ -1,12 +1,12 @@
 .site-header {
   display: grid;
-  grid-template-areas: "nav logo .";
-  grid-template-columns: 1fr max-content 1fr;
-
-  @include breakpoint(small-up) {
-    grid-template-areas: "logo nav";
-    grid-template-columns: max-content 1fr;
-  }
+  grid-template-areas: "logo nav";
+  grid-template-columns: max-content 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-site-header);
 }
 
 .site-header__logo-link {
@@ -14,7 +14,8 @@
 }
 
 .site-header__logo {
-  width: 10rem;
+  height: var(--logo-height);
+  width: auto;
 }
 
 .site-header__nav {
@@ -22,11 +23,9 @@
 }
 
 .site-header__nav-list {
-  @include breakpoint(small-up) {
-    display: flex;
-    gap: var(--space-small);
-    justify-content: end;
-  }
+  display: flex;
+  gap: var(--space-medium);
+  justify-content: end;
 }
 
 .site-header__nav-link {
