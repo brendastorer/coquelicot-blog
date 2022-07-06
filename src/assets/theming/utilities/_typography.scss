@@ -68,6 +68,10 @@
   font-weight: var(--font-copy-bold-weight);
 }
 
+.copy--500 {
+  font-weight: 500;
+}
+
 .copy--italic {
   font-style: oblique;
 }
@@ -102,4 +106,15 @@
 
 .link--no-underline:hover {
   text-decoration-color: hsla(var(--color-link-raw), 0.4);
+}
+
+.link--icon {
+  text-decoration: none;
+}
+
+.link--icon:hover svg-icon {
+  color: var(--color-poppy--muted);
+  transition-duration: var(--transition-duration);
+  transition-property: color, fill;
+  transition-timing-function: var(--transition-timing-function);
 }
