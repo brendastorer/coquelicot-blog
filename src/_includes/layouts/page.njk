@@ -4,10 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or metadata.title }}</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHFBQZP08X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LHFBQZP08X');
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
     {% include "../components/metadata.njk" %}
     <script type="module" src="/assets/svg-icon-sprite.js"></script>
     <link rel="stylesheet" href="{{'/assets/theme.css' | url }}" />
+    <meta name="google-site-verification" content="7GQV55M7lLs7e1DBGJOuMjxGolMkvSoK7sZnnIMoBZc" />
   </head>
 
   <body class="page-layout">

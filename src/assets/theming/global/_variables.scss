@@ -1,6 +1,7 @@
 :root {
   --color-poppy-raw: 346, 100%, 51%;
   --color-poppy--muted: hsl(346, 97%, 46%);
+  --color-poppy: hsl(var(--color-poppy-raw));
   --color-cardinal-raw: 346, 98%, 38%;
   --color-cardinal: hsl(var(--color-cardinal-raw));
   --color-burgundy-raw: 342, 57%, 25%;
@@ -11,7 +12,7 @@
   --color-background: hsl(var(--color-background-raw));
 
   --color-border: hsla(var(--color-foreground-raw), 0.5);
-  --color-action: hsl(var(--color-poppy-raw));
+  --color-action: var(--color-poppy);
   --color-action-raw: var(--color-poppy-raw);
   --color-action-contrast: var(--color-background);
 
@@ -20,7 +21,7 @@
   --space-medium: 1rem;
   --space-large: 2rem;
   --space-xlarge: 4rem;
-  --space-viewport-sides: var(--space-large);
+  --space-viewport-sides: var(--space-medium);
   --space-grid-gap: var(--space-large);
 
   --font-face-copy: "Poppins", sans-serif;
@@ -30,6 +31,7 @@
   --font-heading-size-medium: calc(var(--font-heading-base-size) * 0.8);
   --font-heading-size-small: calc(var(--font-heading-base-size) * 0.6);
   --font-heading-size-xsmall: 1.3rem;
+  --font-heading-weight: 500;
   --font-heading-line-height: 1.2;
   --font-copy-size-large: 1.25rem;
   --font-copy-size-small: 0.9rem;
@@ -68,5 +70,6 @@
 
   @include breakpoint(small-up) {
     --logo-height: 11rem;
+    --space-viewport-sides: var(--space-large);
   }
 }

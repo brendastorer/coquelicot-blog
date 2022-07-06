@@ -22,13 +22,10 @@ layout: page
         class="banner__image banner__image--mobile object-position--top-center"
       >
     </div>
-    <div class="banner__content flex-align--top-left flex flex--column space--gap--medium">
+    <div class="banner__content element--full-width">
       <h2 class="type--heading title--medium">
-        Coquelicot
-      </h2>
-      <p class="copy--large container--copy-max-width">
         A web design & development studio specializing in premium Shopify themes.
-      </p>
+      </h2>
     </div>
   </div>
 </div>
