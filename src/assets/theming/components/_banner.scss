@@ -63,9 +63,9 @@
     background-color: transparent;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    justify-content: center;
-    margin-top: var(--space-xlarge);
+    margin-top: 50vh;
     max-width: 45%;
+    padding-top: var(--logo-height);
     text-align: left;
     z-index: var(--z-index-overlay);
 
