@@ -1,4 +1,5 @@
-# Eleventy Not So Minimal Blog Starter
+# Coquelicot Theme Studio Website and Blog
+Built from Eleventy Not So Minimal Blog Starter
 
 A not so minimal starter for building a website + blog using the Eleventy static site generator.
 
