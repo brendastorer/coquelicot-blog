@@ -1,10 +1,11 @@
 .banner {
   --banner-height: 100%;
-  --banner-min-height: 400px;
+  --banner-min-height: 100vh;
   position: relative;
 
   @include breakpoint(small-up) {
     --banner-height: 100vh;
+    --banner-min-height: 400px;
   }
 }
 
