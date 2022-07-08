@@ -12,3 +12,8 @@
   color: var(--color-burgundy);
   fill: currentColor;
 }
+
+.color--bg-burgundy {
+  background-color: var(--color-burgundy);
+  color: var(--color-background);
+}
