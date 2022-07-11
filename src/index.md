@@ -24,7 +24,7 @@ layout: page
     </div>
     <div class="banner__content element--full-width">
       <h2 class="type--heading title--medium">
-        A web design & development studio specializing in premium Shopify themes.
+        An e-commerce development & design studio specializing in premium Shopify themes.
       </h2>
     </div>
   </div>
