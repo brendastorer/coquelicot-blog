@@ -7,7 +7,7 @@
   --color-burgundy-raw: 342, 57%, 25%;
   --color-burgundy: hsl(var(--color-burgundy-raw));
   --color-foreground-raw: 8, 100%, 3%;
-  --color-foreground: hsl(var(--color-black-raw));
+  --color-foreground: hsl(var(--color-foreground-raw));
   --color-background-raw: 0, 0%, 100%;
   --color-background: hsl(var(--color-background-raw));
 
@@ -63,7 +63,9 @@
   --z-index-base: 1;
   --z-index-overlay: 2;
   --z-index-overlay-interaction: 3;
+  --z-index-footer: 5;
   --z-index-site-header: 10;
+
 
   @include breakpoint(xsmall-up) {
     --logo-height: 8rem;

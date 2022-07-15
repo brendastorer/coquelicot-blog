@@ -1,3 +1,8 @@
+.site-footer {
+  position: relative;
+  z-index: var(--z-index-footer);
+}
+
 .site-footer__container {
   text-align: center;
 
