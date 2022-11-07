@@ -9,16 +9,16 @@ layout: page
         src="../assets/images/landscape-ipads.jpg"
         loading="eager"
         alt="3 ipads, each with a screenshot of the homepage from different websites built by Coquelicot"
-        width="3000px"
-        height="2000px"
+        width="3000"
+        height="2000"
         class="banner__image object-position--top-center banner__image--desktop--only"
       >
       <img
         src="../assets/images/landscape-ipads-mobile.jpg"
         loading="eager"
         alt="3 ipads, each with a screenshot of the homepage from different websites built by Coquelicot"
-        width="3000px"
-        height="2000px"
+        width="1300"
+        height="1647"
         class="banner__image banner__image--mobile object-position--top-center"
       >
     </div>
