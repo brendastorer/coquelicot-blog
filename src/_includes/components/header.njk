@@ -1,7 +1,7 @@
 {% set navItems = collections.all | eleventyNavigation %}
 <header role="banner" class="page-layout__header site-header space--viewport-sides space--pv--large">
   <a href="/" class="site-header__logo-link">
-    <img src="../assets/images/coquelicot-watermark.svg" alt="Coquelicot" class="site-header__logo">
+    <img src="/assets/images/coquelicot-watermark.svg" alt="Coquelicot" class="site-header__logo">
   </a>
   <nav class="site-header__nav" role="navigation" aria-label="main navigation" >
     <ul class="site-header__nav-list list--unstyled">
@@ -9,9 +9,14 @@
         <li class="site-header__nav-item {{ ' active' if page.url === item.url }}">
           <a href="{{ item.url }}" class="site-header__nav-link">
             {{ item.key }}
-            </a>
+          </a>
         </li>
       {%- endfor -%}
+      <li class="site-header__nav-item">
+        <a href="https://support.coquelicot.io/" class="site-header__nav-link">
+          Documentation
+        </a>
+      </li>
       <li>
         <a class="link--icon" href="https://twitter.com/coquelicot_io" target="_blank" rel="noopener">
           <svg-icon

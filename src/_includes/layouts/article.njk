@@ -2,11 +2,17 @@
 layout: page
 ---
 
-<article class="article">
-  <h1>{{ title }}</h1>
-  <small>
-    Published: <time>{{ date | readableDate }}</time>
+<article class="article space--mb--large container--page">
+  <header class="space--mb--large align--text-center">
     <a class="category" href="/blog/{{ category }}">{{ category }}</a>
-  </small>
-  {{ content | safe }}
+    <h1 class="type--heading title--large space--mb--small">
+      {{ title }}
+    </h1>
+    <p>
+      Published: <time>{{ date | readableDate }}</time>
+    </p>
+  </header>
+  <div class="article__content">
+    {{ content | safe }}
+  </div>
 </article>

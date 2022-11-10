@@ -78,6 +78,11 @@ $space-places: (
   gap: var(--space-xsmall);
 }
 
+.space--clear-header {
+  margin-top: var(--logo-height);
+  padding-top: var(--space-xlarge);
+}
+
 .space--gap--unset {
   gap: 0;
 }
