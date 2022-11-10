@@ -1,6 +1,9 @@
 ---
 layout: page
 title: "Blog"
+eleventyNavigation:
+    key: Blog
+    order: 3
 pagination:
   data: collections.blog
   size: 10
@@ -8,15 +11,13 @@ pagination:
 ---
 
 <div class="space--mb--large">
-  <div class="blog container--page">
-    <section class="blog__posts">
-      <h1 class="type--heading title--large space--mb--large">
-        {{ title }}
-      </h1>
-      {% include "./_includes/components/articleList.njk" %}
-    </section>
-    <aside class="blog__categories">
-      {% include "./_includes/components/categoryNav.njk" %}
-    </aside>
+  <h1 class="type--heading title--large align--text-center space--mb--large">
+    {{ title }}
+  </h1>
+  <div class="container--page container--large">
+    {% include "./_includes/components/categoryNav.njk" %}
+    <p>This view contains a list of all blogposts sorted from newest to oldest.</p>
+
+    {% include "./_includes/components/articleList.njk" %}
   </div>
 </div>
