@@ -8,7 +8,7 @@
   --color-burgundy: hsl(var(--color-burgundy-raw));
   --color-foreground-raw: 8, 100%, 3%;
   --color-foreground: hsl(var(--color-foreground-raw));
-  --color-background-raw: 0, 0%, 100%;
+  --color-background-raw: 0, 0%, 97%;
   --color-background: hsl(var(--color-background-raw));
 
   --color-border: hsla(var(--color-foreground-raw), 0.5);
@@ -24,7 +24,7 @@
   --space-viewport-sides: var(--space-medium);
   --space-grid-gap: var(--space-large);
 
-  --font-size-base: 15px;
+  --font-size-base: 16px;
   --font-face-copy: "Poppins", sans-serif;
   --font-face-heading: "Poppins", sans-serif;
   --font-heading-base-size: 2.6rem;
@@ -40,7 +40,7 @@
   --font-copy-size-xxsmall: 0.7rem;
   --font-copy-line-height: 1.5;
   --font-copy-bold-weight: 600;
-  --form-element-height: 2.2rem;
+  --form-element-height: 44px;
 
   --container-max-width-copy: 45rem;
   --container-width-form: 38ch;
@@ -50,7 +50,7 @@
   --page-width: 100rem;
   --logo-height: 6rem;
 
-  --link-underline-offset: 0.25em;
+  --link-underline-offset: 0.15em;
   --border-size: 1px;
   --border: var(--border-size) solid var(--color-border);
   --border-radius: 0;

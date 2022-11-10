@@ -5,35 +5,26 @@
 
 .site-footer__container {
   text-align: center;
-
-  @include breakpoint(small-up) {
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--space-grid-gap);
-    text-align: left;
-  }
-}
-
-.site-footer__copyright {
-  @include breakpoint(small-up) {
-    display: flex;
-    justify-content: end;
-    margin-top: var(--space-large);
-  }
 }
 
 .site-footer__form-container {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: var(--space-small);
-
-  @include breakpoint(small-down) {
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .site-footer__button:hover {
   border-color: var(--button-text-color--hover);
+}
+
+.site-footer__top-shape {
+  -webkit-clip-path: url(#solid-waves-angle-top-down);
+  clip-path: url(#solid-waves-angle-top-down);
+  height: 9vh;
+  left: -2px;
+  position: relative;
+  top: 1px;
+  width: 100%;
 }

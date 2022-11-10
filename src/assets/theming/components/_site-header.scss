@@ -2,10 +2,6 @@
   display: grid;
   grid-template-areas: "logo nav";
   grid-template-columns: max-content 1fr;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: var(--z-index-site-header);
 }
 
@@ -24,7 +20,7 @@
 
 .site-header__nav-list {
   display: flex;
-  gap: var(--space-medium);
+  gap: 1.5rem;
   justify-content: end;
 }
 

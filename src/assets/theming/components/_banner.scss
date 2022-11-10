@@ -1,27 +1,14 @@
 .banner {
-  --banner-height: 100%;
-  --banner-min-height: 100vh;
   position: relative;
-
-  @include breakpoint(small-up) {
-    --banner-height: 100vh;
-    --banner-min-height: 500px;
-  }
 }
 
 .banner__container {
-  align-items: center;
-  display: grid;
-  grid-template-rows: minmax(var(--banner-min-height), var(--banner-height));
   position: relative;
   width: 100%;
   z-index: var(--z-index-base);
 }
 
 .banner__media {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  height: 100%;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -47,12 +34,10 @@
 
 .banner__content {
   align-items: center;
-  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   gap: var(--space-small);
-  height: 100%;
-  padding: var(--space-small) var(--space-viewport-sides) var(--space-large);
+  padding: var(--space-small) var(--space-viewport-sides) var(--space-xlarge);
   position: relative;
   max-width: 100%;
   width: 100%;
@@ -63,13 +48,6 @@
 
   @include breakpoint(small-up) {
     align-items: unset;
-    background-color: transparent;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    margin-top: 50vh;
-    max-width: 44%;
-    padding-top: var(--logo-height);
-    text-align: left;
     z-index: var(--z-index-overlay);
 
     p {
