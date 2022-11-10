@@ -12,14 +12,14 @@ pagination:
 
 <div class="space--mb--large">
   <div class="blog container--page">
-    <aside class="blog__categories">
-      {% include "./_includes/components/categoryNav.njk" %}
-    </aside>
     <section class="blog__posts">
       <h1 class="type--heading title--large space--mb--large">
         {{ title }}
       </h1>
       {% include "./_includes/components/articleList.njk" %}
     </section>
+    <aside class="blog__categories">
+      {% include "./_includes/components/categoryNav.njk" %}
+    </aside>
   </div>
 </div>
