@@ -1,17 +1,19 @@
 {% set categories =  collections.categoryList %}
-<nav role="navigation" aria-label="category navigation" >
-  <span>Filter posts by category:</span>
-  <ul>
-    <li class="category__link {{ ' active' if page.url == '/blog/'}}">
-      <a class="category__link" 
+<nav class="blog__category-nav" aria-label="category navigation" >
+  <span class="type--heading space--mb--small display--block">
+    Categories:
+  </span>
+  <ul class="list--unstyled">
+    <li class="space--mb--small">
+      <a class="button button--tag {{ 'button--secondary' if page.url !== "/blog/" }}"
         href="/blog"
         {{ "aria-current" if page.url === "/blog/" }}
           >all</a>
     </li>
     {%- for category in categories %}
     {% set catUrl = ["/blog/", category.key, "/" ] |  join %}
-    <li class="category__link {{ ' active' if page.url == catUrl }}">
-      <a href="{{ catUrl }}"
+    <li class="space--mb--small">
+      <a href="{{ catUrl }}" class="button button--tag {{ ' button--secondary' if page.url != catUrl }}"
       {{ "aria-current" if page.url == catUrl }}>
         {{ category.key }}
       </a>

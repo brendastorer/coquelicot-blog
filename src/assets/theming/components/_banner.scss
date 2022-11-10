@@ -31,27 +31,3 @@
     display: none;
   }
 }
-
-.banner__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-small);
-  padding: var(--space-small) var(--space-viewport-sides) var(--space-xlarge);
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-
-  p {
-    text-align: center;
-  }
-
-  @include breakpoint(small-up) {
-    align-items: unset;
-    z-index: var(--z-index-overlay);
-
-    p {
-      text-align: left;
-    }
-  }
-}

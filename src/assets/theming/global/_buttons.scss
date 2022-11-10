@@ -14,20 +14,18 @@ button,
   border: var(--border-size) solid var(--button-background-color);
   color: var(--button-text-color);
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   fill: currentColor;
   font-family: var(--font-face-copy);
-  font-size: var(--font-copy-size-xsmall);
-  font-weight: var(--font-copy-bold-weight);
+  font-size: 1rem;
+  font-weight: var(--font-copy-semibold-weight);
   height: auto;
   justify-content: center;
-  letter-spacing: 0.15em;
   line-height: 1.1;
   min-height: var(--form-element-height);
   padding: 0 1.2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition-duration: 150ms;
   transition-property: background-color, border-color, fill, color;
   transition-timing-function: ease;
@@ -76,4 +74,21 @@ button:focus:hover,
 .button:focus:hover,
 [type="submit"]:focus:hover {
   outline: 0;
+}
+
+.button--tag {
+  border-radius: 9999px;
+  font-size: var(--font-copy-size-xsmall);
+  font-weight: var(--font-copy-bold-weight);
+  min-height: calc(var(--form-element-height) * 0.6);
+  padding: 0 var(--space-small);
+}
+
+.button--secondary {
+  --button-background-color: var(--color-white);
+  --button-text-color: var(--color-action);
+  --button-background-color--hover: var(--color-burgundy);
+  --button-text-color--hover: var(--color-action);
+
+  border-color: var(--color-action);
 }
