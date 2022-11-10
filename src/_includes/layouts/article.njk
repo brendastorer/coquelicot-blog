@@ -4,7 +4,6 @@ layout: page
 
 <article class="article space--mb--large container--page">
   <header class="space--mb--large align--text-center">
-    <a class="category" href="/blog/{{ category }}">{{ category }}</a>
     <h1 class="type--heading title--large space--mb--small">
       {{ title }}
     </h1>
@@ -12,7 +11,30 @@ layout: page
       Published: <time>{{ date | readableDate }}</time>
     </p>
   </header>
-  <div class="article__content">
-    {{ content | safe }}
-  </div>
+  <section class="article__container">
+    <div class="article__content">
+      {{ content | safe }}
+    </div>
+    <footer class="space--mt--large flex space--gap--small">
+      <span class="type--heading">
+        More articles:
+      </span>
+      {% set categories =  collections.categoryList %}
+      <ul class="list--unstyled flex space--gap--small space--m--unset">
+        <li>
+          <a class="button button--tag button--secondary" href="/blog">
+            all
+          </a>
+        </li>
+        {%- for category in categories %}
+        {% set catUrl = ["/blog/", category.key, "/" ] |  join %}
+        <li>
+          <a href="{{ catUrl }}" class="button button--tag button--secondary">
+            {{ category.name }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </footer>
+  </section>
 </article>

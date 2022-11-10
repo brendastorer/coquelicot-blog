@@ -15,7 +15,7 @@
     <li class="space--mb--small">
       <a href="{{ catUrl }}" class="button button--tag {{ ' button--secondary' if page.url != catUrl }}"
       {{ "aria-current" if page.url == catUrl }}>
-        {{ category.key }}
+        {{ category.name }}
       </a>
     </li>
     {%- endfor -%}

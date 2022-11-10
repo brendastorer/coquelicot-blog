@@ -15,7 +15,10 @@ eleventyComputed:
       {% include "./_includes/components/categoryNav.njk" %}
     </aside>
     <section class="blog__posts">
-      <h1 class="type--heading title--large space--mb--large">
+      <span class="type--heading title--large">
+        Blog
+      </span>
+      <h1 class="type--heading title--small space--mt--small space--mb--large">
         {{ title }}
       </h1>
       {% set articles = collections.categories[cat.key] | reverse %}

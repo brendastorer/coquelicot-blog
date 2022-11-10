@@ -1,12 +1,14 @@
-.article__content {
-  --article-spacing: 1.5em;
-
+.article__container {
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 80ch;
   margin-left: auto;
   margin-right: auto;
+  max-width: 80ch;
   width: 100%;
+}
+
+.article__content {
+  --article-spacing: 1.5em;
   
   & h1,
   & h2,
