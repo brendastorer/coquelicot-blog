@@ -68,12 +68,16 @@
   font-weight: var(--font-copy-bold-weight);
 }
 
-.copy--500 {
-  font-weight: 500;
+.copy--semibold {
+  font-weight: var(--font-copy-semibold-weight);
 }
 
 .copy--italic {
   font-style: oblique;
+}
+
+.copy--mono {
+  font-family: var(--font-face-mono);
 }
 
 .line-height--heading {
@@ -98,6 +102,22 @@
 
 .type--strikethrough {
   text-decoration: line-through;
+}
+
+.type--highlight {
+  position: relative;
+
+  &::before {
+    background-color: hsla(var(--color-poppy-raw), 0.15);
+    bottom: 0;
+    content: "";
+    height: 60%;
+    left: -2px;
+    position: absolute;
+    transform: rotate(-2deg);
+    width: calc(100% + 4px);
+    z-index: -1;
+  }
 }
 
 .link--no-underline {

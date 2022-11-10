@@ -10,12 +10,16 @@ eleventyComputed:
 ---
 
 <div class="space--mb--large">
-  <h1 class="type--heading title--large align--text-center space--mb--large">
-    {{ title }}
-  </h1>
-  <div class="container--page container--large">
-    {% include "./_includes/components/categoryNav.njk" %}
-    {% set articles = collections.categories[cat.key] | reverse %}
-    {% include "./_includes/components/articleList.njk" %}
+  <div class="blog container--page">
+    <aside class="blog__categories">
+      {% include "./_includes/components/categoryNav.njk" %}
+    </aside>
+    <section class="blog__posts">
+      <h1 class="type--heading title--large space--mb--large">
+        {{ title }}
+      </h1>
+      {% set articles = collections.categories[cat.key] | reverse %}
+      {% include "./_includes/components/articleList.njk" %}
+    </section>
   </div>
 </div>
