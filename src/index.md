@@ -5,26 +5,17 @@ layout: page
 <div class="banner">
   <div class="banner__container">
     <div class="container--page container--large align--block-center space--mb--medium align--text-center">
-      <h2 class="type--heading title--large">
-        Whisk
-      </h2>
-      <span class="copy--large type--highlight copy--mono copy--bold copy--italic">
-        coming soon!
-      </span>
-      <h3 class="title--small space--mv--medium">
-        A contemporary and colorful Shopify theme made for the food and drink merchant, optimized for quick conversion and repeat shopping.
-      </h3>
-      <!-- <h2 class="type--heading title--large space--mb--medium">
+      <h2 class="type--heading title--large space--mb--medium">
         Introducing Whisk
       </h2>
-      <h3 class="title--small space--mb--medium">
+      <h3 class="title--xsmall space--mb--large">
         A contemporary and colorful Shopify theme made for the food and drink merchant, optimized for quick conversion and repeat shopping.
       </h3>
       <div class="flex space--gap--medium flex--justify-center">
-        <a href="#" class="button">
+        <a href="https://themes.shopify.com/themes/whisk/styles/soft" class="button" target="_blank" rel="nofollow">
           Install a free trial on Shopify
         </a>
-      </div> -->
+      </div>
     </div>
     <div class="banner__media fade-in-image">
       <img
