@@ -1,25 +1,28 @@
 <ul class="blog__article-list list--unstyled">
-{% for article in articles | reverse %}
+{% for article in articles %}
   <li class="blog__article-item">
     <article class="blog__article-excerpt">
-      <h2 class="type--heading title--xsmall">
-        <a href="{{ article.url | url }}">
+      {% if page.fileSlug == 'blog' %}
+        <div class="space--mb--xsmall">
+          <a class="copy--eyebrow copy--xsmall color--poppy link--no-underline" href="/blog/{{ article.data.category }}">
+            {{ article.data.category }}
+          </a>
+        </div>
+      {% endif %}
+      <h2 class="type--heading title--xsmall space--mb--xsmall">
+        <a href="{{ article.url | url }}" class="link--no-underline">
           {{ article.data.title }}
         </a>
       </h2>
-      <small class="copy--small">
+      <small class="copy--small copy--mono">
         <time>
           {{ article.data.date | readableDate }}
         </time>
       </small>
-      <p class="space--mv--medium">
+      <p class="space--mt--medium">
         {{ article.data.excerpt }}
+        <a href="{{ article.url | url }}" class="type--no-wrap">Read more</a>
       </p>
-      {% if page.fileSlug == 'blog' %}
-        <a class="button button--tag button--secondary" href="/blog/{{ article.data.category }}">
-          {{ article.data.category }}
-        </a>
-      {% endif %}
     </article>
   </li>
 {% endfor %}

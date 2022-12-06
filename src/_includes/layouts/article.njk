@@ -2,14 +2,14 @@
 layout: page
 ---
 
-<article class="article space--mb--large container--page">
-  <header class="space--mb--large align--text-center">
+<article class="article article--{{ page.fileSlug }} space--mb--large container--page">
+  <header class="space--mb--small align--text-center">
+    <p class="space--mb--small copy--mono">
+      <time>{{ date | readableDate }}</time>
+    </p>
     <h1 class="type--heading title--large space--mb--small">
       {{ title }}
     </h1>
-    <p>
-      Published: <time>{{ date | readableDate }}</time>
-    </p>
   </header>
   <section class="article__container">
     <div class="article__content">

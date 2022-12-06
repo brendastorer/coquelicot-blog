@@ -104,4 +104,18 @@
   & > *:first-child {
     margin-top: 0;
   }
+
+  & > p:first-of-type {
+    font-style: italic;
+    text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid var(--color-poppy);
+      width: 125px;
+      height: 1.75rem;
+      margin: 0 auto;
+    }
+  }
 }
