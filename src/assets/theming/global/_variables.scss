@@ -70,11 +70,6 @@
   --z-index-footer: 5;
   --z-index-site-header: 10;
 
-
-  @include breakpoint(xsmall-up) {
-    --logo-height: 8rem;
-  }
-
   @include breakpoint(small-up) {
     --logo-height: 10rem;
     --space-viewport-sides: var(--space-large);
