@@ -36,4 +36,12 @@ layout: page
       >
     </div>
   </div>
+  <img
+    src="../assets/images/ShopifyPartners_Primary.png"
+    loading="lazy"
+    alt="Shopify Partners logo"
+    width="300"
+    height="50"
+    class="align--block-center"
+      >
 </div>

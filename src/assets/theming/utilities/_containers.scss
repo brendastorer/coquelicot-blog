@@ -37,3 +37,9 @@
 .container--form-max-width {
   max-width: var(--container-width-form);
 }
+
+.container--image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

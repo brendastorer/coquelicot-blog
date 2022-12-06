@@ -1,0 +1,16 @@
+.article--founder-2022-12-06 {
+  .container--image--founder {
+    aspect-ratio: 1;
+  }
+
+  @include breakpoint(small-up) {
+    .container--image--founder {
+      aspect-ratio: unset;
+      float: left; 
+      height: auto; 
+      width: 50%; 
+      margin-right: 2rem; 
+      margin-bottom: 0.5rem;
+    }
+  }
+}
