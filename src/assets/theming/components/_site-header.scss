@@ -1,12 +1,21 @@
 .site-header {
-  display: grid;
-  grid-template-areas: "logo nav";
-  grid-template-columns: max-content 1fr;
   z-index: var(--z-index-site-header);
+  
+  @include breakpoint(xsmall-up) {
+    display: grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: max-content 1fr;
+  }
 }
 
 .site-header__logo-link {
   grid-area: logo;
+
+  @include breakpoint(xsmall-down) {
+    display: block;
+    margin: 0 auto var(--space-large);
+    width: max-content;
+  }
 }
 
 .site-header__logo {
@@ -22,6 +31,10 @@
   display: flex;
   gap: 1.5rem;
   justify-content: end;
+
+  @include breakpoint(xsmall-down) {
+    justify-content: center;
+  }
 }
 
 .site-header__nav-link {
