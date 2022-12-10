@@ -3,9 +3,13 @@
     aspect-ratio: 1;
   }
 
+  .container--image--founder img {
+    margin-top: 0;
+  }
+
   @include breakpoint(small-up) {
     .container--image--founder {
-      aspect-ratio: unset;
+      aspect-ratio: 0.71;
       float: left; 
       height: auto; 
       width: 50%; 

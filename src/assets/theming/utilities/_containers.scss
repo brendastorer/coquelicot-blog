@@ -38,6 +38,10 @@
   max-width: var(--container-width-form);
 }
 
+.container--image {
+  background-color: #faeeee;
+}
+
 .container--image img {
   height: 100%;
   object-fit: cover;
