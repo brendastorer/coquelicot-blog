@@ -9,7 +9,7 @@
           </a>
         </div>
       {% endif %}
-      <h2 class="type--heading title--xsmall space--mb--xsmall">
+      <h2 class="type--heading title--xsmall">
         <a href="{{ article.url | url }}" class="link--no-underline">
           {{ article.data.title }}
         </a>
@@ -21,7 +21,7 @@
       </small>
       <p class="space--mt--medium">
         {{ article.data.excerpt }}
-        <a href="{{ article.url | url }}" class="type--no-wrap">Read more</a>
+        <a href="{{ article.url | url }}" class="type--no-wrap copy--italic space--ml--xsmall">Read more</a>
       </p>
     </article>
   </li>

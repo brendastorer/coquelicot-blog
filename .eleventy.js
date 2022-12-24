@@ -25,6 +25,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
 
   eleventyConfig.addPassthroughCopy('./src/favicon.ico')
+  eleventyConfig.addPassthroughCopy('./src/assets/fonts')
+  eleventyConfig.addPassthroughCopy('./src/assets/javascript')
   eleventyConfig.addPassthroughCopy('./src/assets/icons')
   eleventyConfig.addPassthroughCopy('./src/assets/images')
   eleventyConfig.addPassthroughCopy('./src/assets/sprite.svg')

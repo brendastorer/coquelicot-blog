@@ -15,26 +15,30 @@ layout: page
     <div class="article__content">
       {{ content | safe }}
     </div>
-    <footer class="space--mt--large flex space--gap--small">
-      <span class="type--heading">
-        More articles:
-      </span>
-      {% set categories =  collections.categoryList %}
-      <ul class="list--unstyled flex space--gap--small space--m--unset">
-        <li>
-          <a class="button button--tag button--secondary" href="/blog">
-            all
-          </a>
-        </li>
-        {%- for category in categories %}
-        {% set catUrl = ["/blog/", category.key, "/" ] |  join %}
-        <li>
-          <a href="{{ catUrl }}" class="button button--tag button--secondary">
-            {{ category.name }}
-          </a>
-        </li>
-        {%- endfor -%}
-      </ul>
+    <footer class="article__footer space--mt--large">
+      {% include "components/socialShare.njk" %}
+      <div class="flex flex--align-center space--gap--small">
+        <span class="copy--semibold line-height--short copy--small">
+          More articles:
+        </span>
+        {% set categories =  collections.categoryList %}
+        <ul class="list--unstyled flex space--gap--small space--m--unset">
+          <li>
+            <a class="button button--tag button--secondary" href="/blog">
+              all
+            </a>
+          </li>
+          {%- for category in categories %}
+          {% set catUrl = ["/blog/", category.key, "/" ] |  join %}
+          <li>
+            <a href="{{ catUrl }}" class="button button--tag button--secondary">
+              {{ category.name }}
+            </a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
     </footer>
   </section>
 </article>
+<script src="{{ '/assets/javascript/social-share.js' | url }}"></script>

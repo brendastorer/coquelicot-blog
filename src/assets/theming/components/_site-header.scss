@@ -28,17 +28,19 @@
 }
 
 .site-header__nav-list {
+  align-items: center;
   display: flex;
-  gap: 1.5rem;
   justify-content: end;
+  margin-top: -1rem;
 
   @include breakpoint(xsmall-down) {
     justify-content: center;
+    margin-bottom: 1rem;
   }
 }
 
 .site-header__nav-link {
-  font-weight: 500;
+  font-weight: var(--font-copy-semibold-weight);
   text-decoration-color: transparent;
 }
 
