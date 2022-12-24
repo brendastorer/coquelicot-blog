@@ -18,10 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
-    {% include "../components/metadata.njk" %}
     <script type="module" src="/assets/svg-icon-sprite.js"></script>
     <link rel="stylesheet" href="{{'/assets/theme.css' | url }}" />
     <meta name="google-site-verification" content="7GQV55M7lLs7e1DBGJOuMjxGolMkvSoK7sZnnIMoBZc" />
+    {% seo "" %}
   </head>
 
   <body class="page-layout page--{{ page.fileSlug or 'home' }}">
