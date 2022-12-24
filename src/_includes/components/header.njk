@@ -5,20 +5,20 @@
   </a>
   <nav class="site-header__nav" role="navigation" aria-label="main navigation" >
     <ul class="site-header__nav-list list--unstyled">
-       <li class="site-header__nav-item">
+       <li class="site-header__nav-item space--mr--medium">
         <a href="https://support.coquelicot.io/" class="site-header__nav-link">
           Documentation
         </a>
       </li>
       {%- for item in navItems -%}
         <li class="site-header__nav-item {{ ' active' if page.url === item.url }}">
-          <a href="{{ item.url }}" class="site-header__nav-link">
+          <a href="{{ item.url }}" class="site-header__nav-link space--mr--medium">
             {{ item.key }}
           </a>
         </li>
       {%- endfor -%}
       <li>
-        <a class="link--icon" href="https://twitter.com/coquelicot_io" target="_blank" rel="noopener">
+        <a class="button button--icon" href="https://twitter.com/coquelicot_io" target="_blank" rel="noopener">
           <svg-icon
             src="/assets/sprite.svg#twitter"
             height="24"
@@ -30,7 +30,7 @@
         </a>
       </li>
       <li>
-        <a class="link--icon" href="https://www.linkedin.com/company/coquelicot-design-development/" target="_blank" rel="noopener">
+        <a class="button button--icon" href="https://www.linkedin.com/company/coquelicot-design-development/" target="_blank" rel="noopener">
           <svg-icon
               src="/assets/sprite.svg#linkedin"
               height="24"

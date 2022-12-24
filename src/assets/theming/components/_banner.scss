@@ -20,6 +20,15 @@
   width: 100%;
 }
 
+.banner__subtitle {
+  font-size: 1.1rem;
+
+  @include breakpoint(small-up) {
+    font-size: 1.25rem;
+    max-width: 55ch;
+  }
+}
+
 .banner__image--desktop--only {
   @include breakpoint(small-down) {
     display: none;
@@ -27,6 +36,8 @@
 }
 
 .banner__image--mobile {
+  margin-top: var(--space-large);
+
   @include breakpoint(small-up) { 
     display: none;
   }

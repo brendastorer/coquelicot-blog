@@ -8,7 +8,7 @@ layout: page
       <h2 class="type--heading title--large space--mb--medium">
         Introducing Whisk
       </h2>
-      <h3 class="title--xsmall space--mb--large">
+      <h3 class="banner__subtitle space--mb--large align--block-center">
         A contemporary and colorful Shopify theme made for the food and drink merchant, optimized for quick conversion and repeat shopping.
       </h3>
       <div class="flex space--gap--medium flex--justify-center">
@@ -40,8 +40,8 @@ layout: page
     src="../assets/images/ShopifyPartners_Primary.png"
     loading="lazy"
     alt="Shopify Partners logo"
-    width="300"
-    height="50"
-    class="align--block-center"
+    width="220"
+    height="37"
+    class="align--block-center space--mt--medium"
       >
 </div>

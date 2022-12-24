@@ -1,7 +1,7 @@
 {
   "name": "coquelicot-io",
   "version": "1.0.0",
-  "description": "Coquelicot, Shopify Theme Design and Development Agency",
+  "description": "Coquelicot, A Shopify Theme Design and Development Agency",
   "main": "index.md",
   "scripts": {
     "generate:sprite": "svg-icon-generate --folder=src/assets/icons --output=src/assets/sprite.svg",

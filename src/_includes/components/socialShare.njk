@@ -1,0 +1,92 @@
+{% set pageUrl %}https://coquelicot.io/blog/{{ page.fileSlug }}{% endset %}
+<div class="flex flex--align-center">
+  <span class="copy--semibold copy--small space--mr--xsmall">Share:</span> 
+  <social-share data-share-url="{{ pageUrl }}" class="social-share">
+    <ul class="list--unstyled social-share__list flex flex--align-center" role="list">
+      <li>
+        <a
+          href="https://twitter.com/share?url={{ pageUrl }}&amp;text={{ title }}%20by%20@coquelicot_io"
+          target="_blank"
+          rel="noopener"
+          data-share-link
+          class="button button--icon"
+          aria-label="Share on Twitter">
+          <svg-icon
+            src="/assets/sprite.svg#twitter"
+            height="24"
+            width="24"
+            aria-hidden="true"
+            focusable="false">
+          </svg-icon>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url={{ pageUrl }}"
+          data-share-link
+          target="_blank"
+          rel="noopener"
+          class="button button--icon"
+          aria-label="Share on LinkedIn">
+          <svg-icon
+            src="/assets/sprite.svg#linkedin"
+            height="24"
+            width="24"
+            aria-hidden="true"
+            focusable="false">
+          </svg-icon>
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.facebook.com/sharer.php?u={{ pageUrl }}"
+          data-share-link
+          target="_blank"
+          rel="noopener"
+          class="button button--icon"
+          aria-label="Share on Facebook">
+          <svg-icon
+            src="/assets/sprite.svg#facebook"
+            height="24"
+            width="24"
+            aria-hidden="true"
+            focusable="false">
+          </svg-icon>
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:?subject={{ title }}&amp;body=Check out this article by Coquelicot. {{ pageUrl }}."
+          target="_blank"
+          rel="noopener"
+          data-share-link
+          class="button button--icon"
+          aria-label="Share over email">
+          <svg-icon
+            src="/assets/sprite.svg#mail"
+            height="24"
+            width="24"
+            aria-hidden="true"
+            focusable="false">
+          </svg-icon>
+        </a>
+      </li>
+      <li>
+        <button data-share-clipboard class="button--icon" aria-label="Copy to clipboard">
+          <svg-icon
+            src="/assets/sprite.svg#link"
+            height="24"
+            width="24"
+            aria-hidden="true"
+            focusable="false">
+          </svg-icon>
+        </button>
+        <div data-success-message class="display--hidden social-share__success-message" role="status" aria-hidden="true">
+          <span class="copy--italic copy--small">
+            Copied to clipboard!
+          </span>
+        </div>
+      </li>
+    </ul>
+  </social-share>
+</div>

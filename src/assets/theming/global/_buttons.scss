@@ -2,7 +2,7 @@
 button,
 .button,
 [type="submit"] {
-  --button-background-color: hsla(var(--color-action-raw), 0.9);
+  --button-background-color: var(--color-action);
   --button-text-color: var(--color-action-contrast);
   --button-background-color--hover: var(--color-burgundy);
   --button-text-color--hover: var(--color-action);
@@ -18,12 +18,12 @@ button,
   fill: currentColor;
   font-family: var(--font-face-copy);
   font-size: 1rem;
-  font-weight: var(--font-copy-semibold-weight);
+  font-weight: var(--font-copy-bold-weight);
   height: auto;
   justify-content: center;
   line-height: 1.1;
   min-height: var(--form-element-height);
-  padding: 0 1.2rem;
+  padding: 0.01em 1.2em 0;
   text-align: center;
   text-decoration: none;
   transition-duration: 150ms;
@@ -76,12 +76,48 @@ button:focus:hover,
   outline: 0;
 }
 
+.button--icon {
+  --button-background-color: transparent;
+  --button-text-color: var(--color-foreground);
+  --button-background-color--hover: transparent;
+  --button-text-color--hover: var(--color-action);
+
+  align-items: center;
+  border: 0;
+  color: var(--button-text-color);
+  display: flex;
+  fill: currentColor;
+  font-weight: normal;
+  height: unset;
+  justify-content: center;
+  line-height: var(--font-copy-line-height);
+  margin: 0;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.button--icon:hover {
+  box-shadow: none;
+  color: var(--button-text-color--hover);
+  text-decoration: none;
+}
+
+.button--icon svg {
+  vertical-align: middle;
+}
+
 .button--tag {
   border-radius: 9999px;
-  font-size: var(--font-copy-size-xsmall);
-  font-weight: var(--font-copy-bold-weight);
+  font-size: calc(var(--font-copy-size-xsmall) * 0.9);
+  font-weight: var(--font-copy-extrabold-weight);
   min-height: calc(var(--form-element-height) * 0.6);
-  padding: 0 var(--space-small);
+  padding: 0.05em var(--space-small) 0;
+  font-family: var(--font-face-copy);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .button--secondary {

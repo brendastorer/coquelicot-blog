@@ -19,7 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--font-copy-weight);
   height: 100%;
   line-height: var(--font-copy-line-height);
   margin: 0;
