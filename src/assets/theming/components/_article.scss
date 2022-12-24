@@ -22,7 +22,10 @@
 }
 
 .social-share__success-message {
+  background-color: var(--color-background);
+  padding: 0.3em;
   position: absolute;
+  line-height: var(--font-heading-line-height);
 }
 
 .article__content {
