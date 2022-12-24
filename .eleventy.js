@@ -1,11 +1,25 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
-
+const pluginSEO = require("eleventy-plugin-seo")
 const { DateTime } = require('luxon')
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin)
   eleventyConfig.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: "Coquelicot",
+    description: "Expert Shopify theme design and development.",
+    url: "https://coquelicot.io",
+    author: "Brenda Storer",
+    twitter: "coquelicot_io",
+    image: "https://coquelicot.io/assets/images/social-image.png",
+    options: {
+      twitterCardType: "summary_large_image",
+      imageWithBaseUrl: true,
+      showPageNumbers: false,
+      titleDivider: "|"
+    }
+  })
 
   eleventyConfig.addLayoutAlias('page', 'layouts/page')
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
@@ -17,7 +31,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
       'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'
   })
-  eleventyConfig.addPassthroughCopy('./src/assets/social-image.jpg')
 
   eleventyConfig.addNunjucksAsyncShortcode('image', require('./src/_11ty/imageShortcode').imageShortcode)
 
