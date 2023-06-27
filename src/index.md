@@ -9,7 +9,7 @@ layout: page
         Introducing Whisk
       </h2>
       <h3 class="banner__subtitle space--mb--large align--block-center">
-        A contemporary and colorful Shopify theme made for the food and drink merchant, optimized for quick conversion and repeat shopping.
+        A contemporary and colorful Shopify theme with organic shapes and layouts, great for natural and sustainable brands.
       </h3>
       <div class="flex space--gap--medium flex--justify-center">
         <a href="https://themes.shopify.com/themes/whisk/styles/soft" class="button" target="_blank" rel="nofollow">
@@ -19,7 +19,7 @@ layout: page
     </div>
     <div class="banner__media fade-in-image">
       <img
-        src="../assets/images/whisk-hero-image-skinny.jpg"
+        src="../assets/images/whisk-hero-image-2023-06.jpg"
         loading="eager"
         alt="An iPad, an iPhone, and a MacBook, each showing three different pages of the Frulla demo store for the Whisk theme"
         width="3400"
@@ -27,7 +27,7 @@ layout: page
         class="banner__image object-position--top-center banner__image--desktop--only"
       >
       <img
-        src="../assets/images/whisk-hero-image-skinny-mobile.jpg"
+        src="../assets/images/whisk-hero-image-mobile-2023-06.jpg"
         loading="eager"
         alt="An iPad, an iPhone, and a MacBook, each showing three different pages of the Frulla demo store for the Whisk theme"
         width="1200"
