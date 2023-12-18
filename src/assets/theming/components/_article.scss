@@ -103,9 +103,35 @@
   & li {
     list-style: inherit;
   }
+
+  & ol {
+    counter-reset: custom-number-counter;
+    margin-left: 0;
+  }
+
+  & ol li {
+    counter-increment: custom-number-counter;
+    display: flex;
+    gap: 0.6rem;
+    list-style-type: none;
+  }
+
+  & ol li div {
+    margin-top: 0;
+  }
+
+  & ol li::before {
+    color: var(--color-poppy);
+    content: counter(custom-number-counter) ".";
+    font-family: var(--font-face-mono);
+    font-size: 2rem;
+    font-weight: var(--font-copy-bold-weight);
+    flex: none;
+    margin-top: -1.1rem;
+  }
   
   & blockquote {
-    border-left: 2px solid var(--color-poppy);
+    border-left: 3px solid var(--color-poppy);
     font-family: var(--font-face-quote);
     font-size: var(--font-copy-size-large);
     font-style: italic;
@@ -116,8 +142,8 @@
 
     @media screen and (min-width: 1150px) {
       font-size: var(--font-copy-size-xlarge);
-      margin-left: -5rem;
-      margin-right: -5rem;
+      // margin-left: -5rem;
+      // margin-right: -5rem;
     }
   }
 
@@ -166,7 +192,7 @@
     &::after {
       content: '';
       display: block;
-      border-bottom: 2px solid var(--color-poppy);
+      border-bottom: 3px solid var(--color-poppy);
       width: 125px;
       height: 1.75rem;
       margin: 0 auto;

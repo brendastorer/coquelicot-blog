@@ -47,9 +47,16 @@ Theme Forest does offer an “Extended” license, which allows for “Use in an
 
 <h2>How can I make sure my theme is licensed?</h2>
 <ol>
-<li>
-Always purchase a theme from the original seller. For merchants, this applies if this is a theme in the Shopify Theme Store, Theme Forest, or another third-party site. Make sure the original purchase happens on your store’s account so that the theme license is attributed to you and your store. When hiring an agency, designer, or developer to build your store, whether or not they say they are using a custom theme or customizing an existing theme, make sure you know the origin of the theme. ** how to find out the name of the theme**. For developers, if the client already has a store, make sure you make the client purchase the theme on their store, and then you can port over the code to your development store for customizations. If you are starting their store from scratch and purchase a theme 
-</li>
+  <li>
+    <div>
+      <strong>Always purchase a theme from the original seller.</strong><br> For merchants, this applies if this is a theme in the Shopify Theme Store, Theme Forest, or another third-party site. Make sure the original purchase happens on your store’s account so that the theme license is attributed to you and your store. When hiring an agency, designer, or developer to build your store, whether or not they say they are using a custom theme or customizing an existing theme, make sure you know the origin of the theme. ** how to find out the name of the theme**. For developers, if the client already has a store, make sure you make the client purchase the theme on their store, and then you can port over the code to your development store for customizations. If you are starting their store from scratch and purchase a theme...
+    </div>
+  </li>
+  <li>
+    <div>
+      <strong>Always purchase a theme from the original seller.</strong><br> For merchants, this applies if this is a theme in the Shopify Theme Store, Theme Forest, or another third-party site. Make sure the original purchase happens on your store’s account so that the theme license is attributed to you and your store. When hiring an agency, designer, or developer to build your store, whether or not they say they are using a custom theme or customizing an existing theme, make sure you know the origin of the theme. ** how to find out the name of the theme**. For developers, if the client already has a store, make sure you make the client purchase the theme on their store, and then you can port over the code to your development store for customizations. If you are starting their store from scratch and purchase a theme...
+    </div>
+  </li>
 </ol>
 
 
