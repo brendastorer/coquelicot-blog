@@ -54,3 +54,5 @@ To build
 ```
 npm run build
 ```
+
+This repository will auto deploy to Netlify.
