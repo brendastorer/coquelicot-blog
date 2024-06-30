@@ -19,7 +19,7 @@ layout: page
     </div>
     <div class="banner__media fade-in-image">
       <img
-        src="../assets/images/whisk-hero-image-2023-06.jpg"
+        src="../assets/images/whisk-hero-image-2024-06-19.jpg"
         loading="eager"
         alt="An iPad, an iPhone, and a MacBook, each showing three different pages of the Frulla demo store for the Whisk theme"
         width="3400"
@@ -27,7 +27,7 @@ layout: page
         class="banner__image object-position--top-center banner__image--desktop--only"
       >
       <img
-        src="../assets/images/whisk-hero-image-mobile-2023-06.jpg"
+        src="../assets/images/whisk-hero-image-mobile-2024-06-30.jpg"
         loading="eager"
         alt="An iPad, an iPhone, and a MacBook, each showing three different pages of the Frulla demo store for the Whisk theme"
         width="1200"
